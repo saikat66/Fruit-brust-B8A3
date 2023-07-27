@@ -4,6 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
+
+    <!-- Tailwind and DaisyUI cdn starts here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cdn ends here -->
+
+    <!-- Font awesome starts here -->
+    <script
+      src="https://kit.fontawesome.com/5aa755da21.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font awesome ends here -->
+
+    <!-- Lato Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lato Google fonts ends here -->
+
+    <!-- Favicon starts here -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Favicon ends here -->
+
+    <style>
+      .lato-font {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="lato-font">
+    <header>
+      <!-- Nav starts here -->
+      <nav class="max-w-screen-xl mx-auto my-1 py-1 px-12">
+        <section
+          class="navbar flex items-center justify-between bg-[#F85559] rounded-full md:flex gap-3 lg:flex flex-row px-10"
+        >
+          <div class="text-sm font-bold text-white gap-4">
+            <a class="cursor-pointer">Home</a>
+            <a class="cursor-pointer">Shop</a>
+            <a class="cursor-pointer">All Fruits</a>
+            <a class="cursor-pointer">About Us</a>
+          </div>
+
+          <div class="gap-2">
+            <img class="cursor-pointer w-8" src="./images/logo.png" alt="" />
+            <h1 class="text-3xl text-white font-bold cursor-pointer">
+              Fruit Burst
+            </h1>
+          </div>
+
+          <div class="">
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered rounded-3xl px-12 md:w-auto relative"
+              />
+              <i class="fa-solid fa-magnifying-glass relative right-8"></i>
+            </div>
+          </div>
+        </section>
+      </nav>
+    </header>
+  </body>
 </html>
